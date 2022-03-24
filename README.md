@@ -6,10 +6,10 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the *playbook* file may be used to install only certain pieces of it, such as Filebeat.
 
-  [Ansible](ansible/Ansible-playbook.yml)
-  [ELK](ansible/ELK-playbook.yml)
-  [Filebeat](ansible/Filebeat-playbook.yml)
-  [Metricbeat](ansible/Metricbeat-playbook.yml)
+  ![Ansible](ansible/Ansible-playbook.yml) 
+  ![ELK](ansible/ELK-playbook.yml)
+  ![Filebeat](ansible/Filebeat-playbook.yml)
+  ![Metricbeat](ansible/Metricbeat-playbook.yml)
 
 This document contains the following details:
 - Description of the Topologu
@@ -28,7 +28,7 @@ Load balancing ensures that the application will be highly *available*, in addit
 - *Load balancers ensure reliability by distributing network/taffic across multiple backend servers. This improves the user experience by protecting things like web security, availabilty and web traffic*
 - *Jumbox serves as a gatway to gain entry into a seperate security zone/network. Often times, ssh is the main point of access. One can gain advantages with security, access control and network segmentation*
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the *data* and system *logs*.
 - *Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.*
 - *Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.*
 
@@ -95,7 +95,7 @@ SSH into the control node and follow the steps below:
 
 
 - _Which file is the playbook? *Elk-playbook.yml* Where do you copy it? */etc/ansible*
-- _Which file do you update to make Ansible run the playbook on a specific machine? [Refer to file](Hosts/Webservers_and_ELK). How do I specify which machine to install the ELK server on versus which to install Filebeat on? *Give host a name and specify IP address under hosts*
+- _Which file do you update to make Ansible run the playbook on a specific machine? [Refer to the following file](Hosts/Webservers_and_ELK). How do I specify which machine to install the ELK server on versus which to install Filebeat on? *Give host a name and specify IP address under hosts*
 - _  Which URL do you navigate to in order to check that the ELK server is running? *Public IP of ELK "104.42.115.150:5601"*
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
